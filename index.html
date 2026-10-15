@@ -2,420 +2,262 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#07101f">
-<title>Privacy Policy — BrenavexUltra</title>
-<meta name="description" content="BrenavexUltra Privacy Policy: how we collect, use, protect, and share information on mobile.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>Privacy Policy - BrenavexUltra</title>
 <style>
-:root{
-  --bg:#07101f; --surface:rgba(255,255,255,.055); --line:rgba(255,255,255,.10);
-  --text:#e9edf8; --muted:#98a4c2; --brand:#00c2a8; --brand2:#3b82f6; --warn:#ffb84c; --ok:#3ddc97;
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-}
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;padding:0}
-body{
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI","Inter","Helvetica Neue",Arial,sans-serif;
-  background:radial-gradient(1200px 700px at 88% -8%,rgba(0,194,168,.20),transparent 55%),
-             radial-gradient(900px 600px at -6% 6%,rgba(59,130,246,.20),transparent 55%),var(--bg);
-  color:var(--text);line-height:1.72;font-size:16px;
-  -webkit-font-smoothing:antialiased;min-height:100vh;padding-bottom:48px;
-}
-.wrap{max-width:820px;margin:0 auto;padding:0 20px}
-header{position:relative;padding:44px 0 26px;text-align:center;overflow:hidden}
-header .shield{width:76px;height:76px;margin:0 auto 16px;border-radius:22px;display:grid;place-items:center;
-  background:linear-gradient(135deg,var(--brand),var(--brand2));box-shadow:0 12px 28px rgba(0,194,168,.42);transform:rotate(-4deg)}
-header .shield svg{width:36px;height:36px;transform:rotate(4deg)}
-header h1{font-size:clamp(1.7rem,5.5vw,2.25rem);margin:6px 0 8px;letter-spacing:-.02em;line-height:1.25}
-header h1 span{background:linear-gradient(90deg,#7fe8d8,#9fc0ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-header p{color:var(--muted);margin:0 auto;max-width:520px;font-size:.96rem}
-.meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
-.chip{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border-radius:999px;background:var(--surface);
-  border:1px solid var(--line);font-size:.83rem;color:var(--muted);backdrop-filter:blur(6px)}
-.chip b{color:var(--text);font-weight:600}
-.chip .dot{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(61,220,151,.16)}
-.layout{display:grid;grid-template-columns:208px 1fr;gap:26px;margin-top:22px;align-items:start}
-.toc{position:sticky;top:18px;background:rgba(11,22,40,.72);border:1px solid var(--line);border-radius:18px;
-  padding:16px 12px;backdrop-filter:blur(12px);max-height:calc(100vh - 50px);overflow:auto}
-.toc h2{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:2px 8px 12px;font-weight:600}
-.toc ol{list-style:none;margin:0;padding:0;counter-reset:t}
-.toc li{counter-increment:t;margin:2px 0}
-.toc a{display:flex;gap:10px;align-items:flex-start;padding:9px 10px;border-radius:11px;color:var(--muted);
-  text-decoration:none;font-size:.86rem;transition:.18s;line-height:1.35}
-.toc a::before{content:counter(t,decimal-leading-zero);font-size:.72rem;color:var(--brand);font-weight:700;flex:0 0 auto;margin-top:2px}
-.toc a:hover{background:rgba(255,255,255,.05);color:var(--text)}
-.toc a.on{background:linear-gradient(90deg,rgba(0,194,168,.22),rgba(59,130,246,.10));color:#fff}
-main{display:flex;flex-direction:column;gap:16px;min-width:0}
-.card{background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));border:1px solid var(--line);
-  border-radius:20px;padding:24px 24px 20px;box-shadow:var(--shadow)}
-.card:target{border-color:rgba(0,194,168,.55);box-shadow:0 0 0 4px rgba(0,194,168,.12),var(--shadow)}
-.card h3{margin:0 0 4px;font-size:1.22rem;letter-spacing:-.01em;display:flex;align-items:center;gap:11px}
-.card h3 em{font-style:normal;font-size:.78rem;font-weight:700;color:var(--brand);background:rgba(0,194,168,.14);
-  border:1px solid rgba(0,194,168,.3);padding:3px 8px;border-radius:999px;letter-spacing:.04em}
-.card .lead{color:var(--muted);margin:2px 0 16px;font-size:.9rem}
-h4{font-size:1rem;margin:20px 0 8px;color:#fff}
-h4:first-of-type{margin-top:4px}
-p{margin:10px 0}
-ul,ol{padding-left:22px;margin:10px 0}
-li{margin:6px 0}
-b,strong{color:#fff;font-weight:600}
-a{color:#8fe3d4}
-a:hover{color:#fff}
-code{background:rgba(255,255,255,.08);padding:1px 6px;border-radius:5px;font-size:.88em;color:#d9e2ff}
-hr{border:0;border-top:1px solid var(--line);margin:22px 0}
-table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.9rem}
-th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
-th{background:rgba(0,194,168,.12);color:#fff;font-weight:600;font-size:.82rem;letter-spacing:.03em}
-td:first-child{color:#fff;white-space:nowrap}
-tbody tr:nth-child(even){background:rgba(255,255,255,.025)}
-.note{display:flex;gap:12px;background:rgba(0,194,168,.09);border:1px solid rgba(0,194,168,.28);border-radius:14px;
-  padding:14px 16px;margin:16px 0;font-size:.9rem}
-.note svg{flex:0 0 auto;width:20px;height:20px;color:var(--brand);margin-top:3px}
-.warn{background:rgba(255,184,76,.08);border-color:rgba(255,184,76,.32)}
-.warn svg{color:var(--warn)}
-.ok{background:rgba(61,220,151,.08);border-color:rgba(61,220,151,.3)}
-.ok svg{color:var(--ok)}
-.mail{color:#8fe3d4;font-weight:600;text-decoration:none;border-bottom:1px dashed rgba(143,227,212,.5)}
-.mail:hover{color:#fff;border-bottom-color:#fff}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:10px;margin:14px 0}
-.pbox{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;padding:13px 14px;display:flex;gap:10px;align-items:flex-start}
-.pbox svg{width:18px;height:18px;color:var(--brand);flex:0 0 auto;margin-top:2px}
-.pbox small{display:block;color:var(--muted);font-size:.78rem;margin-top:2px}
-.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
-.pill{padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line);font-size:.8rem;color:var(--muted)}
-.pill.on{background:rgba(61,220,151,.12);border-color:rgba(61,220,151,.35);color:#9ef5cf}
-.pill.off{background:rgba(255,255,255,.03);border-color:var(--line);color:var(--muted)}
-details{border:1px solid var(--line);border-radius:14px;padding:0;margin:12px 0;background:rgba(255,255,255,.03);overflow:hidden}
-summary{cursor:pointer;padding:14px 16px;font-weight:600;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";color:var(--brand);font-size:1.2rem;line-height:1}
-details[open] summary::after{content:"–"}
-details[open] summary{border-bottom:1px solid var(--line)}
-details .inner{padding:6px 16px 16px}
-footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:30px;padding:0 16px}
-footer .links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:12px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;
-  background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff!important;text-decoration:none;
-  font-weight:600;font-size:.92rem;box-shadow:0 8px 22px rgba(0,194,168,.35);transition:.18s}
-.btn:hover{transform:translateY(-1px)}
-.top{display:inline-flex;align-items:center;gap:6px;margin-top:14px;color:var(--muted);font-size:.85rem;text-decoration:none}
-#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--brand),var(--brand2));z-index:99}
-@media (max-width:820px){
-  .layout{grid-template-columns:1fr}
-  .toc{position:static;max-height:none;padding:12px;order:2}
-  .toc ol{display:flex;flex-wrap:wrap;gap:6px}
-  .toc li{margin:0}
-  .toc a{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;font-size:.8rem;padding:6px 12px}
-  .toc a::before{display:none}
-  .toc h2{display:none}
-  .card{padding:20px 18px}
-  body{font-size:15.5px}
-}
-@media print{
-  body{background:#fff;color:#000;font-size:11pt}
-  .toc,.top,#bar,.btn,.note{display:none!important}
-  .card{border:1px solid #ccc;box-shadow:none;break-inside:avoid;page-break-inside:avoid}
-  a{color:#000;text-decoration:none}
-}
+  :root{
+    --primary:#2f6bff;
+    --text:#1c1f2b;
+    --sub:#6b7280;
+    --line:#eceef2;
+    --bg:#f5f6f8;
+    --card:#ffffff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+  html,body{background:var(--bg);}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    color:var(--text);
+    line-height:1.75;
+    font-size:15px;
+    padding-bottom:40px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 16px;}
+
+  .header{
+    background:linear-gradient(135deg,#2f6bff,#5b8cff);
+    color:#fff;
+    padding:34px 20px 28px;
+    text-align:center;
+  }
+  .header .logo{
+    width:56px;height:56px;line-height:56px;
+    background:rgba(255,255,255,.18);
+    border-radius:16px;
+    font-size:26px;font-weight:700;
+    margin:0 auto 12px;
+  }
+  .header h1{font-size:22px;font-weight:700;letter-spacing:.3px;}
+  .header p{font-size:12px;opacity:.9;margin-top:8px;}
+
+  .section{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:20px 18px;
+    margin-top:14px;
+    box-shadow:0 2px 12px rgba(20,30,60,.05);
+  }
+  .section h2{
+    font-size:16px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:12px;
+  }
+  .section h2 .num{
+    flex:none;
+    width:24px;height:24px;line-height:24px;
+    background:var(--primary);
+    color:#fff;
+    border-radius:8px;
+    font-size:12px;
+    text-align:center;
+    font-weight:700;
+  }
+  .section h3{font-size:14.5px;font-weight:700;margin:16px 0 6px;}
+  .section p{color:#374151;margin-bottom:8px;}
+  .section ul{margin:4px 0 8px 18px;}
+  .section li{margin-bottom:6px;color:#374151;}
+  .section li::marker{color:var(--primary);}
+
+  .em{color:var(--primary);font-weight:600;}
+  .muted{color:var(--sub);font-size:13px;}
+
+  .contact{
+    background:linear-gradient(135deg,#eef3ff,#f7f9ff);
+    border:1px solid #e0e8ff;
+    border-radius:12px;
+    padding:14px 16px;
+    margin-top:10px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+  }
+  .contact .icon{
+    width:40px;height:40px;flex:none;
+    background:#fff;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;
+    box-shadow:0 2px 6px rgba(47,107,255,.12);
+  }
+  .contact .info{overflow:hidden;}
+  .contact .info .t{font-size:12px;color:var(--sub);}
+  .contact .info .v{font-size:14px;font-weight:600;word-break:break-all;}
+
+  .footer{
+    text-align:center;
+    color:var(--sub);
+    font-size:12px;
+    margin-top:24px;
+    line-height:1.9;
+  }
+  .toggle{color:var(--primary);font-size:13px;cursor:pointer;user-select:none;display:inline-block;margin-top:4px;}
+  .toggle-body{display:none;margin-top:8px;}
+  .toggle-body.open{display:block;}
 </style>
 </head>
 <body>
-<div id="bar"></div>
 
-<header>
-  <div class="shield" aria-hidden="true">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 2.5 4.5 5v6c0 5 3.2 8.5 7.5 10.5 4.3-2 7.5-5.5 7.5-10.5V5L12 2.5Z"/>
-      <path d="m8.6 12.1 2.3 2.3 4.5-4.6"/>
-    </svg>
-  </div>
-  <div class="wrap">
-    <h1>Privacy Policy for <span>BrenavexUltra</span></h1>
-    <p>How we collect, use, protect, and share information when you use the BrenavexUltra mobile app. Read it in full, or jump straight to the topic you care about.</p>
-    <div class="meta">
-      <span class="chip"><span class="dot"></span> Effective <b>October 14, 2026</b></span>
-      <span class="chip">Last updated <b>October 14, 2026</b></span>
-      <span class="chip">English (US)</span>
-    </div>
-  </div>
-</header>
+<div class="header">
+  <div class="logo">B</div>
+  <h1>BrenavexUltra Privacy Policy</h1>
+  <p>Effective: October 06, 2026 &nbsp;|&nbsp; Version 1.0</p>
+</div>
 
 <div class="wrap">
-<div class="layout">
 
-  <nav class="toc" aria-label="Table of contents">
-    <h2>Contents</h2>
-    <ol>
-      <li><a href="#s1">Overview</a></li>
-      <li><a href="#s2">Information we collect</a></li>
-      <li><a href="#s3">Permissions & mobile sensors</a></li>
-      <li><a href="#s4">How we use information</a></li>
-      <li><a href="#s5">Analytics & third parties</a></li>
-      <li><a href="#s6">Sharing & disclosure</a></li>
-      <li><a href="#s7">Sale & sharing of personal info</a></li>
-      <li><a href="#s8">Your rights & choices</a></li>
-      <li><a href="#s9">Security</a></li>
-      <li><a href="#s10">Retention & deletion</a></li>
-      <li><a href="#s11">International transfers</a></li>
-      <li><a href="#s12">Children's privacy</a></li>
-      <li><a href="#s13">Changes to this policy</a></li>
-      <li><a href="#s14">Contact us</a></li>
-    </ol>
-  </nav>
-
-  <main>
-
-    <section class="card" id="s1">
-      <h3>1. Overview <em>TL;DR</em></h3>
-      <p class="lead">This Privacy Policy describes the information practices for <strong>BrenavexUltra</strong> (the "App," "Service," or "Application"), provided by <strong>BrenavexUltra</strong> ("we," "us," or "our"). It applies to your use of the App on any mobile device.</p>
-
-      <p>By downloading, installing, or using BrenavexUltra, you agree to the collection and use of information as described in this Policy. If you do not agree, do not install or use the App, and remove it using your device's standard uninstall process.</p>
-
-      <div class="note ok">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5 4.5 5v6c0 5 3.2 8.5 7.5 10.5 4.3-2 7.5-5.5 7.5-10.5V5L12 2.5Z"/><path d="m8.6 12.1 2.3 2.3 4.5-4.6"/></svg>
-        <div><strong>Bottom line.</strong> We collect only the information needed to run and improve BrenavexUltra. We do not sell your personal information. You can stop all collection at any time by uninstalling the App.</div>
-      </div>
-
-      <div class="note">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v5h1"/></svg>
-        <div><strong>Not legal advice.</strong> This document is provided for general informational purposes. Privacy laws vary by jurisdiction and by the data practices of the third-party services you actually integrate. If you operate in regulated markets or process sensitive data, consult a qualified attorney.</div>
-      </div>
-    </section>
-
-    <section class="card" id="s2">
-      <h3>2. Information we collect</h3>
-      <p class="lead">We group the information we collect into two categories. Whether we collect a given item depends on which features you use and which permissions you grant.</p>
-
-      <h4>2.1 Information you provide</h4>
-      <ul>
-        <li><strong>Account information:</strong> name, email address, username, password, and profile details if you create an account.</li>
-        <li><strong>User content:</strong> anything you enter, upload, save, or otherwise submit through the App.</li>
-        <li><strong>Communications:</strong> messages, support requests, feedback, survey responses, and any information you send to us.</li>
-        <li><strong>Transaction information:</strong> purchase history and related records processed through the app store or a third-party payment provider.</li>
-      </ul>
-
-      <h4>2.2 Information collected automatically</h4>
-      <table>
-        <thead><tr><th>Category</th><th>Examples</th><th>Purpose</th></tr></thead>
-        <tbody>
-          <tr><td>Device data</td><td>device model, operating system and version, language, screen size, carrier</td><td>compatibility, diagnostics</td></tr>
-          <tr><td>Identifiers</td><td>device IDs, advertising IDs (IDFA / Advertising ID), installation ID</td><td>analytics, fraud prevention</td></tr>
-          <tr><td>Network & connection</td><td>IP address, network type, timezone</td><td>service delivery, security</td></tr>
-          <tr><td>Usage data</td><td>screens viewed, features used, session length, taps, crashes, performance</td><td>analytics, improvement</td></tr>
-          <tr><td>Approximate location</td><td>city or region derived from IP address</td><td>localization, content relevance</td></tr>
-        </tbody>
-      </table>
-
-      <div class="note warn">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4 2.5 20h19L12 4Z"/><path d="M12 10h.01M11 14h1v3h1"/></svg>
-        <div><strong>Customize this list.</strong> The table above is a baseline. Remove any row that does not apply to BrenavexUltra and add any data type you actually collect — especially precise location, contacts, camera, microphone, health, or payment data. Your privacy policy must match the permissions your App requests at runtime and the declarations you submit to the App Store and Google Play.</div>
-      </div>
-    </section>
-
-    <section class="card" id="s3">
-      <h3>3. Permissions and mobile sensors</h3>
-      <p class="lead">BrenavexUltra may request access to device features to provide its functionality. You can manage every permission in your device settings. Denying a permission may limit the related feature but will not necessarily affect the rest of the App.</p>
-
-      <div class="grid">
-        <div class="pbox">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.8-7 12-7 12h-4Z"/></svg>
-          <div>Notifications<small>Local alerts and optional remote messages.</small>
-            <div class="opts"><span class="pill off">Off by default</span></div>
-          </div>
-        </div>
-        <div class="pbox">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5C3 8 5 3 12 3s9 5 9 8.5c0 5-4.5 8.5-9 8.5a10 10 0 0 1-4.2-.9L3 21l1.2-4.3"/></svg>
-          <div>Network access<small>Required to deliver App content and services.</small>
-            <div class="opts"><span class="pill on">Always used</span></div>
-          </div>
-        </div>
-        <div class="pbox">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3.2"/><path d="M12 2.5a8.5 8.5 0 0 1 5.5 15l-2.2 3.7c-.7 1.2-2.3 1.2-3 0l-2.2-3.7A8.5 8.5 0 0 1 12 2.5Z"/></svg>
-          <div>Approximate location<small>City or region only, for relevant content.</small>
-            <div class="opts"><span class="pill off">Only if feature used</span></div>
-          </div>
-        </div>
-        <div class="pbox">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="6" width="14" height="11" rx="2.5"/><path d="M21 10h-3v5h3M8 6V4M12 6V4"/></svg>
-          <div>Storage / files<small>To save and read files you choose to open.</small>
-            <div class="opts"><span class="pill off">Only if feature used</span></div>
-          </div>
-        </div>
-      </div>
-
-      <p>Other permissions, such as <strong>precise location</strong>, <strong>contacts</strong>, <strong>camera</strong>, <strong>microphone</strong>, <strong>calendar</strong>, or <strong>health data</strong>, are requested only when the feature that needs them is invoked. We display a prominent, in-App explanation at that moment describing what is collected, why it is needed, and who it is shared with, and we ask for your affirmative choice.</p>
-      <p>You may revoke any permission at any time in your device settings. See <a href="#s8">Section 8</a> for the effects of opting out.</p>
-    </section>
-
-    <section class="card" id="s4">
-      <h3>4. How we use your information</h3>
-      <p class="lead">We use the information we collect for the following purposes, to the extent permitted by applicable law.</p>
-      <ul>
-        <li><strong>Provide the Service.</strong> Create and manage accounts, deliver content, process transactions, and operate core features.</li>
-        <li><strong>Improve and personalize.</strong> Understand usage, fix bugs, test new features, and tailor the experience to your device and preferences.</li>
-        <li><strong>Communicate.</strong> Send service-related notices, respond to your requests, and — only if you opt in — product updates and promotional messages.</li>
-        <li><strong>Promote safety and security.</strong> Detect and prevent fraud, abuse, unauthorized access, and other harmful activity.</li>
-        <li><strong>Comply with law.</strong> Meet legal obligations and respond to lawful requests from public authorities.</li>
-      </ul>
-      <p>We do not use your data for purposes that are materially different from those described here without first updating this Policy and, where required, obtaining your consent.</p>
-    </section>
-
-    <section class="card" id="s5">
-      <h3>5. Analytics and third-party services</h3>
-      <p class="lead">BrenavexUltra uses a small number of third-party services to operate and improve. Each of these providers acts under our instructions and handles data according to its own privacy policy.</p>
-      <table>
-        <thead><tr><th>Service</th><th>What it does</th><th>Privacy notice</th></tr></thead>
-        <tbody>
-          <tr><td>Firebase / Google Analytics for Firebase</td><td>crash reporting, analytics, performance</td><td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td></tr>
-          <tr><td>Google Play services</td><td>app distribution, in-app billing, ads ID</td><td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td></tr>
-          <tr><td>Apple services</td><td>App Store, in-app purchase, push routing</td><td><a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></td></tr>
-        </tbody>
-      </table>
-      <p>If you replace or add providers — advertising networks, payment processors, authentication SDKs, customer support tools, or others — list them here with a working link to their privacy policy. This is the single most common reason privacy policies are rejected by app stores.</p>
-    </section>
-
-    <section class="card" id="s6">
-      <h3>6. Sharing and disclosure</h3>
-      <p class="lead">We do not rent or sell your personal information. We share it only in the following limited circumstances:</p>
-      <ul>
-        <li><strong>Service providers.</strong> Vendors and contractors who process data on our behalf, such as cloud hosting, analytics, payment, customer support, and crash-reporting providers. They are bound to use your information only as we direct and not for their independent purposes.</li>
-        <li><strong>Legal requirements.</strong> When we believe disclosure is necessary to comply with a law, regulation, court order, subpoena, or other valid governmental request, or to protect the rights, property, or safety of BrenavexUltra, our users, or others.</li>
-        <li><strong>Business transfers.</strong> In connection with a merger, acquisition, financing, reorganization, or sale of assets, your information may be transferred to the succeeding entity. We will notify you before your information becomes subject to a materially different policy.</li>
-        <li><strong>With your consent.</strong> Any other sharing occurs only with your explicit permission.</li>
-      </ul>
-    </section>
-
-    <section class="card" id="s7">
-      <h3>7. Sale and sharing of personal information</h3>
-      <p class="lead">Under the California Consumer Privacy Act (CCPA / CPRA), "sharing" includes using personal information for cross-context behavioral advertising.</p>
-      <ul>
-        <li>We <strong>do not sell</strong> your personal information.</li>
-        <li>We <strong>do not share</strong> your personal information for cross-context behavioral advertising.</li>
-        <li>We do not have actual knowledge that we sell or share the personal information of consumers under the age of 16.</li>
-      </ul>
-      <p>Because we do not sell or share personal information, the right to opt out under Section 1798.120 of the CCPA does not apply, and no separate "Do Not Sell or Share My Personal Information" link is required.</p>
-    </section>
-
-    <section class="card" id="s8">
-      <h3>8. Your rights and choices</h3>
-      <p class="lead">Depending on where you live, you may have rights under laws such as the CCPA, GDPR, or other local privacy frameworks. We make the following options available to everyone.</p>
-
-      <table>
-        <thead><tr><th>Right</th><th>How to exercise it</th></tr></thead>
-        <tbody>
-          <tr><td>Access or export</td><td>Email us and we will provide a copy of the personal information we hold about you.</td></tr>
-          <tr><td>Correction</td><td>Update information directly in the App, or ask us to correct inaccurate data.</td></tr>
-          <tr><td>Deletion</td><td>Delete your account in App settings, or email us. We will delete or anonymize your data within a reasonable period, subject to legal retention obligations.</td></tr>
-          <tr><td>Opt out of marketing</td><td>Use the unsubscribe link in any marketing email, or contact us to be removed.</td></tr>
-          <tr><td>Withdraw consent</td><td>Revoke any permission in your device settings or stop using the feature that relied on it.</td></tr>
-        </tbody>
-      </table>
-
-      <h4>Stopping all collection</h4>
-      <p>You can stop all information collection by uninstalling BrenavexUltra using your device's standard uninstall process (through the device interface or the app marketplace). Some residual information may remain in our backup systems for a limited period before being deleted.</p>
-
-      <h4>Non-discrimination</h4>
-      <p>We will not discriminate against you for exercising any privacy right. You will not be denied service, charged a different price, or provided a different level of quality because you chose to access, delete, or correct your information.</p>
-
-      <h4>Identity verification</h4>
-      <p>To protect your information, we may need to verify your identity before fulfilling a request. We will respond within the timeframe required by applicable law and, where permitted, may decline requests that are manifestly unfounded, excessive, or impossible to honor.</p>
-    </section>
-
-    <section class="card" id="s9">
-      <h3>9. Security</h3>
-      <p>We take reasonable administrative, technical, and physical measures to protect information from loss, misuse, unauthorized access, disclosure, alteration, and destruction. These include encryption of data in transit, access controls, secure authentication, and regular review of our practices.</p>
-      <p>No method of transmission over the Internet or electronic storage is completely secure. While we strive to use commercially acceptable safeguards, we cannot guarantee absolute security, and you use the App at your own risk.</p>
-    </section>
-
-    <section class="card" id="s10">
-      <h3>10. Retention and deletion</h3>
-      <p>We retain personal information only for as long as necessary to provide BrenavexUltra, comply with our legal obligations, resolve disputes, and enforce our agreements. When information is no longer needed, we delete it or render it anonymous.</p>
-      <ul>
-        <li><strong>Account data</strong> is kept while your account is active and for a reasonable period afterward.</li>
-        <li><strong>Usage and analytics data</strong> is generally retained in aggregated or pseudonymous form.</li>
-        <li><strong>Support communications</strong> are kept for as long as needed to resolve your request and for record-keeping.</li>
-      </ul>
-      <p>If you ask us to delete your information, we will do so except where retention is required by law (for example, for tax, accounting, fraud prevention, or security purposes).</p>
-    </section>
-
-    <section class="card" id="s11">
-      <h3>11. International data transfers</h3>
-      <p>BrenavexUltra may be operated from, and process information in, countries other than the one in which you reside. When we transfer personal information across borders, we use appropriate safeguards recognized under applicable law, such as standard contractual clauses or other lawful transfer mechanisms, and require our service providers to do the same.</p>
-    </section>
-
-    <section class="card" id="s12">
-      <h3>12. Children's privacy</h3>
-      <p>BrenavexUltra is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13. If we learn that we have collected such information without verifiable parental consent, we will delete it promptly.</p>
-      <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us at the email below so we can take appropriate action.</p>
-    </section>
-
-    <section class="card" id="s13">
-      <h3>13. Changes to this Privacy Policy</h3>
-      <p>We may update this Policy from time to time for legal, regulatory, or operational reasons. When we make material changes, we will update the "Effective Date" at the top of this page and, where appropriate, notify you through the App or by email.</p>
-      <p>Your continued use of BrenavexUltra after the changes take effect constitutes your acceptance of the revised Policy. We encourage you to review this page periodically.</p>
-    </section>
-
-    <section class="card" id="s14">
-      <h3>14. Contact us</h3>
-      <p>If you have any questions about this Privacy Policy or our data practices, or if you wish to exercise any of your privacy rights, contact us:</p>
-      <ul>
-        <li><strong>App:</strong> BrenavexUltra</li>
-        <li><strong>Email:</strong> <a class="mail" href="mailto:a0796827895@gmail.com">a0796827895@gmail.com</a></li>
-        <li><strong>Response time:</strong> We aim to respond within 30 days, or sooner where required by law.</li>
-      </ul>
-
-      <details>
-        <summary>Request access, correction, or deletion by email</summary>
-        <div class="inner">
-          <p>Send an email to <a class="mail" href="mailto:a0796827895@gmail.com">a0796827895@gmail.com</a> with the subject line <code>Privacy Request — BrenavexUltra</code> and include:</p>
-          <ul>
-            <li>the right you wish to exercise (access, correction, or deletion);</li>
-            <li>the email address associated with your account, if any;</li>
-            <li>enough detail for us to locate your information.</li>
-          </ul>
-          <p>We may ask for additional information to verify your identity before processing your request.</p>
-        </div>
-      </details>
-
-      <a class="btn" href="mailto:a0796827895@gmail.com?subject=Privacy%20Request%20%E2%80%94%20BrenavexUltra">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
-        Email privacy requests
-      </a>
-    </section>
-
-    <a class="top" href="#">↑ Back to top</a>
-
-  </main>
-</div>
-
-<footer>
-  <div class="links">
-    <a class="mail" href="mailto:a0796827895@gmail.com">a0796827895@gmail.com</a>
+  <div class="section">
+    <h2><span class="num">1</span>Introduction</h2>
+    <p>Welcome to <span class="em">BrenavexUltra</span> (the "App," "we," "us," or "our"). We are committed to protecting your personal information and respecting your privacy.</p>
+    <p>This Privacy Policy explains how we <b>collect, use, store, share, and safeguard</b> your information when you use our App, wherever you are in the world. Please read it carefully before using the App. By using the App, you agree to the practices described in this Policy.</p>
+    <p class="muted">If you do not agree with this Policy, please stop using the App immediately.</p>
   </div>
-  Privacy Policy for BrenavexUltra · Effective October 14, 2026 · Optimized for mobile; can also be printed as a document.
-</footer>
+
+  <div class="section">
+    <h2><span class="num">2</span>Information We Collect</h2>
+
+    <h3>2.1 Information you provide</h3>
+    <ul>
+      <li>Account information: email address, username, profile picture, and any details you provide during registration;</li>
+      <li>Content you create, upload, or share while using the App;</li>
+      <li>Communications you send to us, such as support requests, feedback, or surveys.</li>
+    </ul>
+
+    <h3>2.2 Information collected automatically</h3>
+    <ul>
+      <li><b>Device information:</b> device model, operating system and version, unique device identifiers, language setting, and screen resolution;</li>
+      <li><b>Usage data:</b> app launches, pages viewed, features used, clicks, crash reports, and performance logs;</li>
+      <li><b>Network information:</b> IP address, internet connection type, and mobile carrier (where applicable).</li>
+    </ul>
+
+    <h3>2.3 Information we do NOT collect</h3>
+    <ul>
+      <li>We do not read your contacts, SMS, or photo library without your explicit permission;</li>
+      <li>We do not collect your precise geolocation unless you grant permission for a feature that requires it;</li>
+      <li>We do not collect or store payment card PINs, passwords, or other sensitive credentials.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">3</span>How We Use Your Information</h2>
+    <p>We process your information only for legitimate, necessary, and lawful purposes, including to:</p>
+    <ul>
+      <li>Provide, maintain, and improve the App's features and services;</li>
+      <li>Authenticate your identity and keep your account secure;</li>
+      <li>Detect, prevent, and address fraud, abuse, and security incidents;</li>
+      <li>Send you important notices, such as updates, changes to our terms, or service alerts;</li>
+      <li>Analyze usage trends in a de-identified or aggregated way to improve the user experience;</li>
+      <li>Respond to your inquiries and provide customer support.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">4</span>How We Share Your Information</h2>
+    <p>We <b>do not sell, rent, or trade</b> your personal information. We may share it only in the following circumstances:</p>
+    <ul>
+      <li><b>With your consent:</b> when you explicitly ask us to share information with a third party;</li>
+      <li><b>Service providers:</b> trusted vendors that help us operate the App (e.g., cloud hosting, analytics, push notifications), bound by confidentiality obligations no less protective than this Policy;</li>
+      <li><b>Legal obligations:</b> when required by law, court order, or government authority, or to protect the safety, rights, or property of our users or the public.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">5</span>International Data Transfers</h2>
+    <p>BrenavexUltra is a global service. Your information may be transferred to and processed in countries other than your own, including the United States and other jurisdictions where our servers or service providers are located.</p>
+    <p>We take appropriate safeguards to ensure your information remains protected in accordance with this Policy, such as standard contractual clauses and data processing agreements, regardless of where it is processed.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">6</span>Data Storage and Security</h2>
+    <ul>
+      <li>We use industry-standard encryption in transit (HTTPS/TLS) and at rest;</li>
+      <li>Access to personal information is restricted to authorized personnel and contractors who need it to perform their duties;</li>
+      <li>We retain your information only for as long as necessary to fulfill the purposes in this Policy, or as required by law;</li>
+      <li>In the event of a data breach, we will notify affected users and relevant authorities as required by applicable law.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">7</span>Your Privacy Rights</h2>
+    <p>Depending on your location, you may have the following rights. We honor all of them to the extent required by law:</p>
+    <ul>
+      <li><b>Access &amp; correction:</b> view and update your account and profile information in the App;</li>
+      <li><b>Deletion:</b> request deletion of your personal information;</li>
+      <li><b>Data portability:</b> receive a copy of your data in a structured, commonly used format;</li>
+      <li><b>Withdraw consent:</b> revoke previously granted permissions (e.g., notifications, camera, photos) in your device settings;</li>
+      <li><b>Object or restrict:</b> object to certain processing or request a restriction on processing;</li>
+      <li><b>Account deletion:</b> self-delete your account via <b>Settings → Delete Account</b>. Upon deletion, we will remove your personal information as described in Section 6.</li>
+    </ul>
+    <p class="muted">Exercising these rights may affect the functionality of certain features. To submit a request, contact us using the information in Section 12.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">8</span>Children's Privacy</h2>
+    <p>The App is not directed to children under the age of 13 (or the relevant age of digital consent in your jurisdiction). We do not knowingly collect personal information from children. If we learn that we have collected such information, we will delete it promptly. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">9</span>Third-Party Services and SDKs</h2>
+    <p>The App may integrate third-party SDKs or services (e.g., analytics, crash reporting, push notifications, advertising, payments). These third parties may collect information as governed by their own privacy policies, not this one. We encourage you to review their policies.</p>
+    <span class="toggle" onclick="var t=document.getElementById('sdk'),o=t.classList.toggle('open');this.textContent=o?'△ Hide SDK list':'▽ View SDK categories we may use'">▽ View SDK categories we may use</span>
+    <div class="toggle-body" id="sdk">
+      <ul>
+        <li><b>Analytics &amp; crash reporting:</b> to understand usage and fix stability issues;</li>
+        <li><b>Push notifications:</b> to deliver service-related messages;</li>
+        <li><b>Advertising (if applicable):</b> to show relevant ads, with opt-out available in your device settings;</li>
+        <li><b>Payments (if applicable):</b> processed by certified payment providers; we do not store your full card details.</li>
+      </ul>
+      <p class="muted">The actual SDKs in use depend on the current version of the App and may change. We update this section when material changes occur.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">10</span>Regional Supplemental Notices</h2>
+    <p>We provide the following additional information for users in certain regions:</p>
+    <ul>
+      <li><b>United States:</b> We do not sell your personal information as defined under the CCPA/CPRA. California residents may exercise rights to know, delete, correct, and opt out of sharing. We do not discriminate against users who exercise their rights.</li>
+      <li><b>European Economic Area (EEA), UK &amp; Switzerland:</b> Our legal bases for processing include performance of a contract, legitimate interests, consent, and compliance with legal obligations. You have the right to lodge a complaint with your local data protection authority.</li>
+      <li><b>Brazil (LGPD):</b> You may request confirmation of processing, access, correction, anonymization, blocking, deletion, and portability of your data.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">11</span>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The updated version will be posted on this page with a revised "Effective" date. For material changes, we will notify you through the App or by other reasonable means. Your continued use of the App after the changes take effect constitutes your acceptance of the updated Policy.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="num">12</span>Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our handling of your personal information, please contact our Privacy Team. We will respond within <span class="em">15 business days</span>.</p>
+    <div class="contact">
+      <div class="icon">✉</div>
+      <div class="info">
+        <div class="t">Privacy / Data Protection Contact</div>
+        <div class="v">faheemmio720@gmail.com</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 BrenavexUltra. All rights reserved.</p>
+    <p>Last updated: October 06, 2026</p>
+  </div>
+
 </div>
 
-<script>
-(function(){
-  var bar=document.getElementById('bar');
-  var links=[].slice.call(document.querySelectorAll('.toc a'));
-  function onScroll(){
-    var h=document.documentElement, st=h.scrollTop||document.body.scrollTop, max=(h.scrollHeight||document.body.scrollHeight)-h.clientHeight;
-    bar.style.width=(max>0?(st/max*100):0)+'%';
-    var cur='';
-    links.forEach(function(a){var t=document.querySelector(a.getAttribute('href')); if(t&&t.offsetTop<=st+140) cur=a.getAttribute('href');});
-    links.forEach(function(a){a.classList.toggle('on', a.getAttribute('href')===cur);});
-  }
-  window.addEventListener('scroll',onScroll,{passive:true});
-  onScroll();
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(e){
-      var el=document.querySelector(this.getAttribute('href'));
-      if(el){e.preventDefault();window.scrollTo({top:el.offsetTop-16,behavior:'smooth'});}
-    });
-  });
-})();
-</script>
 </body>
 </html>
